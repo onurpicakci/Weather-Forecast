@@ -7,7 +7,7 @@ const setQuery = (e) => {
 }
 
 const getResult = (cityName) => {
-    let query = `${url}weather?q=${cityName}&appid=${key}&units=metric&lang=tr`
+    let query = `${url}weather?q=${cityName}&appid=${key}&units=metric&lang=en`
     fetch(query)
     .then(weather => {
         return weather.json();
